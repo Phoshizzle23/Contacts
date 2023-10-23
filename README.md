@@ -1,5 +1,5 @@
 # Contacts
-Repository for the HR Contacts Application
+Repository for the HR Contacts Application V1.0
 ----------------------------------------------------------------------------------------------------------------------------------------
 ___________
 Change Log
