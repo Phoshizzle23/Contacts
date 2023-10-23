@@ -59,8 +59,7 @@
             Grid.Row="3"
             Grid.Column="0"
             x:Name="btdTest" 
-            Text="Test"
-            Clicked="btdTest_Clicked"
+            Text="Test"            
             BackgroundColor="Gray">
         </Button>
 
