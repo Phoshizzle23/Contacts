@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Contacts.Maui.Views_MVVM.Controls"
+             x:Class="Contacts.Maui.Views_MVVM.ViewContactPage_MVVM"
+             Title="View Contact"
+             BackgroundImageSource="bg1.png">
+
+    <controls:ContactControl2_MVVM
+        IsForEdit="True"
+        BindingContext="{Binding .}">
+    </controls:ContactControl2_MVVM>
+    
+</ContentPage>

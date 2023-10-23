@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:vm="clr-namespace:Contacts.Maui.ViewModels"
+             x:DataType="vm:ContactViewModel"
+             x:Class="Contacts.Maui.Views_MVVM.Controls.ContactControl2_MVVM">
+    <VerticalStackLayout Spacing="5" Margin="20, 20, 20, 0">
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Name:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.Name}" TextColor="#941a1d">
+                    <Entry.Behaviors>
+                        <toolkit:TextValidationBehavior
+                            x:Name="nameValidator"
+                            Flags="ValidateOnAttaching,ValidateOnValueChanged"
+                            MinimumLength="1"
+                            IsValid="{Binding IsNameProvided}"
+                            />
+                    </Entry.Behaviors>
+                </Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Email:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.Email}" TextColor="#941a1d">
+                    <Entry.Behaviors>
+                        <toolkit:MultiValidationBehavior
+                            x:Name="emailValidator"
+                            Flags="ValidateOnAttaching,ValidateOnValueChanged">
+                            <toolkit:TextValidationBehavior                            
+                                    Flags="ValidateOnAttaching,ValidateOnValueChanged"
+                                    MinimumLength="1"
+                                    toolkit:MultiValidationBehavior.Error="Email is Required!"
+                                    IsValid="{Binding IsEmailProvided}"
+                            />
+                            <toolkit:EmailValidationBehavior 
+                                Flags="ValidateOnAttaching,ValidateOnValueChanged"
+                                toolkit:MultiValidationBehavior.Error="Email is Invalid!" 
+                                IsValid="{Binding IsEmailFormatValid}"/>
+                        </toolkit:MultiValidationBehavior>
+                    </Entry.Behaviors>
+                </Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Phone:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.Phone}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Department:" VerticalOptions="Center" WidthRequest="90"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.Department}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Address Street:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.AddressStreet}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Address City:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.AddressCity}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Address State:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.AddressState}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Address ZIP:" VerticalOptions="Center" WidthRequest="60" ></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.AddressZip}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Frame Padding="10, 2, 10, 2">
+            <HorizontalStackLayout>
+                <Label Text="Address Country:" VerticalOptions="Center" WidthRequest="60"></Label>
+                <Entry VerticalOptions="Center" Text="{Binding Contact.AddressCountry}" TextColor="#941a1d"></Entry>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <!--<Button x:Name="btnSave" Text="Save"  BackgroundColor="#262626"></Button>-->
+
+        <Button Text="Back" Command="{Binding BackToContactsCommand}" BackgroundColor="#941a1d"></Button>
+
+    </VerticalStackLayout>
+</ContentView>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Contacts.Maui.UserSettingsPage"
+             Title="User Settings"
+             BackgroundImageSource="bg5.png">
+    
+    <VerticalStackLayout Spacing="10">
+        <Grid Padding="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+
+            <Label Grid.Column="0">ENTER YOUR NAME</Label>
+            <Entry Grid.Column="0" x:Name="NameEntry" ></Entry>
+
+            <Label Grid.Row="1">Change Theme</Label>
+            <Switch x:Name="togTheme" Grid.Row="2" Toggled="OnThemeSwitchToggled" BackgroundColor="#941a1d" />
+            
+
+            <Label Grid.Column="1">ENTER YOUR AGE</Label>
+            <Entry Grid.Column="1" x:Name="AgeEntry"></Entry>
+
+            <Label  Grid.Row="1" Grid.Column="2">Disable Sound</Label>
+            <Switch x:Name="togSound" Grid.Row="2" Grid.Column="2" Toggled="togSound_Toggled" BackgroundColor="#262626" />
+
+
+            <Label Grid.Row="3">Change Font Size</Label>
+            <Picker x:Name="fontSizePicker" SelectedIndexChanged="fontSizePicker_SelectedIndexChanged" Grid.Row="4">
+                <Picker.Items>
+                    <x:String>Small</x:String>
+                    <x:String>Medium</x:String>
+                    <x:String>Large</x:String>
+                </Picker.Items>
+            </Picker>        
+
+            <!--<Entry Grid.Column="1" x:Name="OtherStuff"></Entry>-->
+
+            <!--<Label  Grid.Row="2" Grid.Column="1">Disable Sound</Label>
+            <Entry Grid.Column="1" x:Name="OtherStuff"></Entry>-->
+
+            <!--<Button Grid.Row="3" Grid.Column="1" Clicked="SaveButton_Clicked" Text="SAVE USER SETTINGS" VerticalOptions="Center"></Button>-->
+        </Grid>
+        
+        <Label Text="Hello World" Style="{StaticResource GlobalFontSize}" />
+        
+        <Button Clicked="SaveButton_Clicked" Text="SAVE USER SETTINGS" ></Button>
+        <Image Source="logo2.png"></Image>
+    </VerticalStackLayout>
+</ContentPage>

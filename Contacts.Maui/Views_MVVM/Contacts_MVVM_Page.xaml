@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:Contacts.Maui.ViewModels"
+             xmlns:m="clr-namespace:Contacts.CoreBusiness;assembly=Contacts.CoreBusiness"
+             x:DataType="vm:ContactsViewModel"
+             x:Class="Contacts.Maui.Views_MVVM.Contacts_MVVM_Page"
+             Title="Contacts Page"             
+             BackgroundImageSource="bg1.png">
+    <Grid 
+        Padding="5"
+        RowDefinitions="50, *, 50"          
+        ColumnDefinitions="*"
+        RowSpacing="5">
+        
+        
+
+        <SearchBar 
+            x:Name="SearchBar"
+            Grid.Row="0" 
+            Grid.Column="0"
+            Placeholder="Search Contact"
+            Text="{Binding FilterText}"
+            >
+        </SearchBar>
+        <!--<ListView 
+            Grid.Row="1" 
+            Grid.Column="0"
+            x:Name="listContacts" 
+            BackgroundColor="Transparent"
+            SeparatorColor="Black"
+            RowHeight="60"
+            ItemSelected="listContacts_ItemSelected"
+            ItemTapped="listContacts_ItemTapped"
+            >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell 
+                        Text="{Binding Name}" TextColor="#941a1d"
+                        Detail="{Binding Email}">
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete"
+                            IsDestructive="True"                            
+                            Clicked="Delete_Clicked"
+                            CommandParameter="{Binding .}"></MenuItem>
+
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>-->
+
+        <CollectionView
+            x:Name="ContactsCollection"
+            ItemsSource="{Binding Contacts}"
+            Grid.Row="1"
+            Grid.Column="0">
+
+            <CollectionView.ItemTemplate>
+                <DataTemplate x:DataType="m:Contact">
+                    <StackLayout>
+
+                        <SwipeView>
+                            <SwipeView.RightItems>
+                                <SwipeItems>
+                                    <SwipeItem Text="Delete"
+                                               IsDestructive="True"
+                                               BackgroundColor="#941a1d"
+                                               Command="{Binding Source={x:Reference ContactsCollection}, Path=BindingContext.DeleteContactCommand}"
+                                               CommandParameter="{Binding ContactId}">
+                                        
+                                    </SwipeItem>
+                                    <SwipeItem Text="Edit"
+                                               IsDestructive="False"
+                                               BackgroundColor="#262626"
+                                               Command="{Binding Source={x:Reference ContactsCollection}, Path=BindingContext.GotoEditContactCommand}"
+                                               CommandParameter="{Binding ContactId}">
+                                        
+                                    </SwipeItem>
+                                    <SwipeItem Text="View"
+                                               IsDestructive="False"
+                                               BackgroundColor="White"
+                                               Command="{Binding Source={x:Reference ContactsCollection}, Path=BindingContext.GotoViewContactCommand}"
+                                               CommandParameter="{Binding ContactId}">      
+
+                                    </SwipeItem>
+                                </SwipeItems>
+                            </SwipeView.RightItems>
+                            <StackLayout> 
+                            <Frame Margin="0,5,0,5">
+                                <StackLayout Orientation="Vertical" Spacing="5">
+                                    <Label Text="{Binding Name}"></Label>
+                                    <Label Text="{Binding Email}"></Label>
+                                </StackLayout>
+                            </Frame>
+                            </StackLayout>
+                        </SwipeView>
+                                
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            
+        </CollectionView>
+        
+        <Button 
+            Grid.Row="2"
+            Grid.Column="0"            
+            Text="Add Contact"
+            Command="{Binding GotoAddContactCommand}"
+            BackgroundColor="#941a1d">
+        </Button>
+        
+        <!--<Image 
+            Grid.Row="3"
+            Grid.Column="0" 
+            Source="logo1.png">            
+        </Image>-->
+    </Grid>
+    
+</ContentPage>

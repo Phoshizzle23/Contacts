@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Contacts.Maui.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Contacts.Maui"
+    xmlns:views="clr-namespace:Contacts.Maui.Views"
+    xmlns:mvvm="clr-namespace:Contacts.Maui.Views_MVVM"
+    Shell.FlyoutBehavior="Flyout"> 
+    
+    <ShellContent
+        Title="Home"
+        Icon="home.svg"
+        ContentTemplate="{DataTemplate mvvm:Contacts_MVVM_Page}"
+        Route="ContactsPage" />
+    <ShellContent
+        Title="User Settings"
+        Icon="settings.svg"
+        ContentTemplate="{DataTemplate local:UserSettingsPage}"
+        Route="UserSettingsPage" />
+
+</Shell>
