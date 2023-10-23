@@ -1,7 +1,7 @@
 # Contacts
 Repository for the HR Contacts Application
 
-Change List
+Change Log
 
 24/10/2023
 
