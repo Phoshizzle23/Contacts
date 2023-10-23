@@ -18,25 +18,7 @@ public partial class ContactsPage : ContentPage
         this.viewContactsUseCase = viewContactsUseCase;
         this.deleteContactUseCase = deleteContactUseCase;
 
-        //List<Contact> contacts = ContactRepository.GetContacts();
-
-        //listContacts.ItemsSource = contacts;
-
-        //List<Contact> contacts = new List<Contact>() //Hard coded list
-        //{ 
-        //new Contact {Name="John Doe", Email="John_Doe@gmail.com"},
-        //new Contact {Name="Jane Doe", Email="Jane_Doe@gmail.com"},
-        //new Contact {Name="Tom Hanks", Email="Tom_Hanks@gmail.com"},
-        //new Contact {Name="Frank Liu", Email="Frank_Liu@gmail.com"},
-        //};
-
-        //List<string> contacts = new List<string>() { 
-        //    "John Doe",
-        //    "Jane Doe",
-        //    "Tom Hanks",
-        //    "Frank Liu"};
-
-        //listContacts.ItemsSource = contacts;
+        
     }
 
     protected override void OnAppearing()
