@@ -49,3 +49,5 @@ Change List
 //    AddressZip = contactCtrl.AddressZip,
 //    AddressCountry = contactCtrl.AddressCountry,
 //});
+
+4. Deleted all project references to TestPage1
