@@ -4,7 +4,7 @@ Repository for the HR Contacts Application V1.0
 ___________
 Mobile Application Screenshots
 ___________
-1.1_Load App
+<p align="center">1.1_Load App</p>
 
 ![1.1_Load App.JPG](https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true)
 
