@@ -119,7 +119,7 @@ ___________
 
 4. Deleted all project references to TestPage1
 
-16/11/23
-5. Added screenshots for the mobile version of the application
+
+5. Added screenshots for the mobile version of the application - 16/11/23
 
 ----------------------------------------------------------------------------------------------------------------------------------------
