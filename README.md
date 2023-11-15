@@ -6,7 +6,8 @@ Mobile Application Screenshots
 ___________
 <p align="center">1.1_Load App</p>
 
-<p align="center">img src="(https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true" alt="1.1_Load App.JPG">
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true" alt="1.1_Load App.JPG">
 </p>
   
   ![1.1_Load App.JPG](https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true)</p>
