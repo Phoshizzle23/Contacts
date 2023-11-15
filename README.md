@@ -6,7 +6,7 @@ Mobile Application Screenshots
 ___________
 <p align="center">1.1_Load App</p>
 
-![1.1_Load App.JPG](https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true)
+<p align="center">![1.1_Load App.JPG](https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true)</p>
 
 1.2_Swipe left view
 
