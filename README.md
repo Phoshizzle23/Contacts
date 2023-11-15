@@ -1,7 +1,9 @@
 # Contacts
-Repository for the HR Contacts Application
-
-Change List
+Repository for the HR Contacts Application V1.0
+----------------------------------------------------------------------------------------------------------------------------------------
+___________
+Change Log
+___________
 
 24/10/2023
 
@@ -49,3 +51,7 @@ Change List
 //    AddressZip = contactCtrl.AddressZip,
 //    AddressCountry = contactCtrl.AddressCountry,
 //});
+
+4. Deleted all project references to TestPage1
+
+----------------------------------------------------------------------------------------------------------------------------------------
