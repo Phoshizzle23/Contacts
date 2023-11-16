@@ -64,6 +64,68 @@ ___________
   <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/5.1_Use%20search%20function.JPG?raw=true" alt="5.1_Use search function.JPG">
 </p>
 
+___________
+Tablet Application Screenshots
+___________
+<p align="center">1.1_Load App</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20AppTab.jpg?raw=true" alt="1.1_Load App.JPG">
+</p>
+
+<p align="center">1.2_Swipe left view</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.2_SwipeleftviewTab.jpg?raw=true" alt="1.2_Swipe left view.JPG">
+</p>
+
+<p align="center">2.1_View Contact</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/2.1_ViewContactTab.jpg?raw=true" alt="2.1_View Contact.JPG">
+</p>
+
+<p align="center">2.2_Add Contact</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/2.2_AddContactTab.jpg?raw=true" alt="2.2_Add Contact.JPG">
+</p>
+
+<p align="center">2.3_Edit Contact</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/2.3_EditContactTab.jpg?raw=true" alt="2.3_Edit Contact.JPG">
+</p>
+
+<p align="center">3.1_Enter application settings</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/3.1_EnterApplicationSettingsTab.jpg?raw=true" alt="3.1_Enter application settings.JPG">
+</p>
+
+<p align="center">3.2_Toggle dark mode</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/3.2_ToggledarkmodeTab.jpg?raw=true" alt="3.2_Toggle dark mode.JPG">
+</p>
+
+<p align="center">3.3_Switch to light mode</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/3.3_SwitchToLightModeTab.jpg?raw=true" alt="3.3_Switch to light mode.JPG">
+</p>
+
+<p align="center">4.1_Validate name entry</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/4.1_ValidateNameEntryTab.jpg?raw=true" alt="4.1_Validate name entry.JPG">
+</p>
+
+<p align="center">5.1_Use search function</p>
+
+<p align="center">
+  <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/5.1_UseSearchFunctionTab.jpg?raw=true" alt="5.1_Use search function.JPG">
+</p>
 
 ___________
 Change Log
@@ -119,7 +181,7 @@ ___________
 
 4. Deleted all project references to TestPage1
 
-
 5. Added screenshots for the mobile version of the application - 16/11/23
 
+6. Added screenshots for the mobile version of the application - 17/11/23
 ----------------------------------------------------------------------------------------------------------------------------------------
