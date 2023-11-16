@@ -2,7 +2,7 @@
 <p align="center">Repository for the HR Contacts Application V1.0</p>
 ----------------------------------------------------------------------------------------------------------------------------------------
 ___________
-<p align="center">Mobile Application Screenshots</p>
+<p align="center">Mobile Application Screenshots</p></br>
 ___________
 <p align="center">1.1_Load App</p>
 
