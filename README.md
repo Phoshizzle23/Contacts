@@ -9,7 +9,7 @@ ___________
 <p align="center">
   <img src="https://github.com/Phoshizzle23/Contacts/blob/master/Screenshots/1.1_Load%20App.JPG?raw=true" alt="1.1_Load App.JPG">
 </p>
-___________
+_______________________________________________________________________________________________________________________________________________
 <p align="center">1.2_Swipe left view</p>
 
 <p align="center">
