@@ -1,8 +1,8 @@
 # Contacts
-<p align="center">Repository for the HR Contacts Application V1.0</p>
+Repository for the HR Contacts Application V1.0
 ----------------------------------------------------------------------------------------------------------------------------------------
 ___________
-<p align="center">Mobile Application Screenshots</p></br>
+Mobile Application Screenshots
 ___________
 <p align="center">1.1_Load App</p>
 
@@ -65,7 +65,7 @@ ________________________________________________________________________________
 </p>
 
 ___________
-<p align="center">Tablet Application Screenshots</p>
+Tablet Application Screenshots
 ___________
 <p align="center">1.1_Load App</p>
 
@@ -128,7 +128,7 @@ ________________________________________________________________________________
 </p>
 
 ___________
-<p align="center">Change Log</p>
+Change Log
 ___________
 
 24/10/2023
